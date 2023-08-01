@@ -1,3 +1,49 @@
+/* CUSTOM PROPS */
+:root {
+  --accent-color: #ff7500;
+  --bg-color: #252420;
+}
+
+
+/* FONT-FACE */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -16,9 +62,12 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
   background-color: #fff;
-  color: #222;
+  color: #000;
 }
 
 .container {
