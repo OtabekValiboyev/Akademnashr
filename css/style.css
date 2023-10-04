@@ -291,8 +291,8 @@ img {
   margin-right: 40px;
 }
 .feature__item {
-  width: 100%;
-  max-width: 340px;
+  width: 340px;
+  flex-shrink: 0;
 }
 
 .feature__img-wrapper {
@@ -489,6 +489,19 @@ img {
     padding-right: 20px;
   }
 
+  .feature {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .feature__item {
+    width: 30.9%;
+  }
+
+  .feature__item:not(:last-child) {
+    margin-right: 3.63%;
+  }
+
   .footer__list {
     width: 20.36%;
     margin-right: 6.18%;
@@ -500,6 +513,19 @@ img {
 }
 
 @media only screen and (max-width: 760px) {
+  .feature__list {
+    flex-wrap: wrap;
+  }
+
+  .feature__item {
+    width: 46%;
+    margin-right: 8%;
+  }
+
+  .feature__item:nth-child(even) {
+    margin-right: 0;
+  }
+
   .footer__bottom {
     flex-wrap: wrap;
   }
