@@ -414,6 +414,10 @@ img {
   border-bottom: 2px solid rgba(37, 36, 32, 0.5);
 }
 
+.footer__logo {
+  margin-right: 36px;
+}
+
 .footer__socials {
   display: flex;
   align-items: center;
@@ -480,6 +484,11 @@ img {
 
 
 @media only screen and (max-width: 1140px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer__list {
     width: 20.36%;
     margin-right: 6.18%;
@@ -518,5 +527,28 @@ img {
 
   .footer__list:nth-child(2n) {
     margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  .footer__logo  {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__list {
+    width: 100%;
   }
 }
