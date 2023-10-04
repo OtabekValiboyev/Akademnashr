@@ -200,7 +200,7 @@ img {
   background-color: var(--bg-color);
 }
 
-.hero-container {
+.hero__container {
   display: flex;
   position: relative;
 }
@@ -208,6 +208,7 @@ img {
 .hero__inner {
   width: 100%;
   max-width: 387px;
+  margin-right: 24px;
 }
 
 .hero__line {
@@ -277,7 +278,8 @@ img {
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 86.4px */
+  line-height: 120%;
+  /* 86.4px */
   letter-spacing: 0.5px;
 }
 
@@ -287,9 +289,11 @@ img {
   list-style: none;
   display: flex;
 }
+
 .feature__item:not(:last-child) {
   margin-right: 40px;
 }
+
 .feature__item {
   width: 340px;
   flex-shrink: 0;
@@ -362,6 +366,7 @@ img {
   line-height: 120%;
   letter-spacing: 0.5px;
 }
+
 .promo__text {
   margin: 0;
   margin-bottom: 24px;
@@ -512,6 +517,42 @@ img {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .hero__container {
+    justify-content: space-between;
+  }
+
+  .hero__img {
+    position: static;
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__inner {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .hero__line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__img {
+    order: -1;
+    margin-bottom: 26px;
+    box-shadow: 12px -12px 0px 0px rgba(255, 117, 0, 0.6);
+  }
+
+}
+
 @media only screen and (max-width: 760px) {
   .footer__bottom {
     flex-wrap: wrap;
@@ -563,6 +604,14 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .hero__img {
+    box-shadow: 0 0 0 0;
+  }
+
+  .hero__title {
+    font-size: 35px;
+  }
+
   .feature__line {
     margin-left: auto;
     margin-right: auto;
@@ -587,13 +636,21 @@ img {
     padding-bottom: 25px;
   }
 
-  .footer__logo  {
+  .footer__logo {
     margin-bottom: 16px;
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 25px;
+  }
+
+  .hero__description {
+    font-size: 12px;
+  }
+
   .feature__heading {
     font-size: 36px;
   }
