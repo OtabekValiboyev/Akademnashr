@@ -692,6 +692,11 @@ img {
     font-size: 12px;
   }
 
+  .feature {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
   .feature__heading {
     font-size: 36px;
   }
